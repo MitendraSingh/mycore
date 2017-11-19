@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myv()
+{
+var a=20;
+var b=20;
+var c=a+b;
+document.getElementById("vv").innerHTML=c;
+}
+
+function sum1()
+{
+
+
+var a=parseInt(document.getElementById("text1").value);
+var b=parseInt(document.getElementById("text2").value);
+var c=a+b;
+document.getElementById("result").value=c;
+}
+
+function mul1()
+{
+var a=parseInt(document.getElementById("text1").value);
+var b=parseInt(document.getElementById("text2").value);
+var c=a*b;
+document.getElementById("result").value=c;
+}
+
+</script>
+</head>
+<body>
+
+<div id="vv"></div>
+Welcome to our Site 
+input number1<input type='text' name="text1" id="text1"> <br>
+input number2<input type='text' name="text2" id="text2"> <br>
+Result<input type='text' name='result' id='result'> <br>
+<input type='button' value='Sum' name='sum' id='sum' onclick="return sum1()"> <br>
+<input type='button' value='Multipication' name='mul' id='mul' onclick="return mul1()">  
+
+
+</body>
+</html>
